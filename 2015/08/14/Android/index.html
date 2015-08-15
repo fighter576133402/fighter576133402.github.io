@@ -23,7 +23,7 @@
 <meta property="og:image" content="http://fighter576133402.github.io/img/0_13149260864tcc.gif">
 <meta property="og:image" content="http://fighter576133402.github.io/img/0_1314955229J5p1.gif">
 <meta property="og:image" content="http://fighter576133402.github.io/img/0_1314955824i1n9.gif">
-<meta property="og:updated_time" content="2015-08-15T14:43:57.000Z">
+<meta property="og:updated_time" content="2015-08-15T15:21:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础总结篇之一：Activity生命周期">
 <meta name="twitter:description" content="原文地址：http://blog.csdn.net/liuhe688/article/details/6733407/子曰：溫故而知新，可以為師矣。《論語》
@@ -254,7 +254,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="原文地址：http://blog-csdn-net/liuhe688/article/details/6733407/">原文地址：<a href="http://blog.csdn.net/liuhe688/article/details/6733407/" target="_blank" rel="external">http://blog.csdn.net/liuhe688/article/details/6733407/</a></h2><pre><code>子曰：溫故而知新，可以為師矣。《論語》
-</code></pre><p>学习技术也一样，对于技术文档或者经典的技术书籍来说，指望看一遍就完全掌握，那基本不大可能，所以我们需要经常回过头再仔细研读几遍，以领悟到作者的思想精髓。<br>近来回顾了一下关于Activity的生命周期，参看了相关书籍和官方文档，也有了不小的收获，对于以前的认知有了很大程度上的改善，在这里和大家分享一下。<br>熟悉javaEE的朋友们都了解servlet技术，我们想要实现一个自己的servlet，需要继承相应的基类，重写它的方法，这些方法会在合适的时间被servlet容器调用。其实android中的Activity运行机制跟servlet有些相似之处，Android系统相当于servlet容器，Activity相当于一个servlet，我们的Activity处在这个容器中，一切创建实例、初始化、销毁实例等过程都是容器来调用的，这也就是所谓的“Don’t call me, I’ll call you.”机制。<br>我们来看一下这一张经典的生命周期流程图：<br><img src="/img/0_1314838777He6C.gif" alt="life"><br>    相信不少朋友也已经看过这个流程图了，也基本了解了Activity生命周期的几个过程，我们就来说一说这几个过程。</p>
+</code></pre><p>学习技术也一样，对于技术文档或者经典的技术书籍来说，指望看一遍就完全掌握，那基本不大可能，所以我们需要经常回过头再仔细研读几遍，以领悟到作者的思想精髓。<br>近来回顾了一下关于Activity的生命周期，参看了相关书籍和官方文档，也有了不小的收获，对于以前的认知有了很大程度上的改善，在这里和大家分享一下。<br>熟悉javaEE的朋友们都了解servlet技术，我们想要实现一个自己的servlet，需要继承相应的基类，重写它的方法，这些方法会在合适的时间被servlet容器调用。其实android中的Activity运行机制跟servlet有些相似之处，Android系统相当于servlet容器，Activity相当于一个servlet，我们的Activity处在这个容器中，一切创建实例、初始化、销毁实例等过程都是容器来调用的，这也就是所谓的“Don’t call me, I’ll call you.”机制。<br><a id="more"></a><br>我们来看一下这一张经典的生命周期流程图：<br><img src="/img/0_1314838777He6C.gif" alt="life"><br>    相信不少朋友也已经看过这个流程图了，也基本了解了Activity生命周期的几个过程，我们就来说一说这几个过程。</p>
 <ol>
 <li>启动Activity：系统会先调用onCreate方法，然后调用onStart方法，最后调用onResume，Activity进入运行状态。</li>
 <li>当前Activity被其他Activity覆盖其上或被锁屏：系统会调用onPause方法，暂停当前Activity的执行。</li>
@@ -289,6 +289,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2015/08/15/activitylaunchmode/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          基础总结篇之二：Activity的四种launchMode
+        
+      </div>
+    </a>
   
   
     <a href="/2015/08/14/Ios/" id="article-nav-older" class="article-nav-link-wrap">
