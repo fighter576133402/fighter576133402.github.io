@@ -232,7 +232,7 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/31/an_textview/">基础总结篇之四：Service完全解析</a>
+      <a class="article-title" href="/2015/08/31/an_textview/">UI控件TextView</a>
     </h1>
   
 
@@ -241,7 +241,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p># </p>
+        <p>在TextView文字下面加下划线：<br><figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">private void setBottomLine<span class="params">(TextView textView)</span>&#123;</span><br><span class="line">       <span class="keyword">if</span> <span class="params">(textView == null)</span> return;</span><br><span class="line">       textView.getPaint<span class="params">()</span>.setFlags<span class="params">(Paint.UNDERLINE_TEXT_FLAG)</span>; <span class="comment">//下划线</span></span><br><span class="line">       textView.getPaint<span class="params">()</span>.setAntiAlias<span class="params">(<span class="literal">true</span>)</span>;<span class="comment">//抗锯齿</span></span><br><span class="line">   	&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
