@@ -1,0 +1,51 @@
+{
+  "configs": [
+    {
+      "obfs": "tls1.2_ticket_auth",
+      "protocol": "auth_aes128_sha1",
+      "method": "chacha20",
+      "password": "fdwqqw",
+      "remarks": "日本线路1",
+      "server": "jp1-yui.gowah.me",
+      "server_port": 9035
+    },
+    {
+      "obfs": "tls1.2_ticket_auth",
+      "protocol": "auth_aes128_sha1",
+      "method": "chacha20",
+      "password": "fdwqqw",
+      "remarks": "日本线路2",
+      "server": "jp2-yui.gowah.me",
+      "server_port": 9035
+    },
+    {
+      "obfs": "tls1.2_ticket_auth",
+      "protocol": "auth_aes128_sha1",
+      "method": "chacha20",
+      "password": "fdwqqw",
+      "remarks": "美国线路1",
+      "server": "rihanna.gowah.me",
+      "server_port": 9035
+    },
+    {
+      "obfs": "tls1.2_ticket_auth",
+      "protocol": "auth_aes128_sha1",
+      "method": "chacha20",
+      "password": "fdwqqw",
+      "remarks": "美国线路2",
+      "server": "tinashe.gowah.me",
+      "server_port": 9035
+    },
+    {
+      "obfs": "tls1.2_ticket_auth",
+      "protocol": "auth_aes128_sha1",
+      "method": "chacha20",
+      "password": "fdwqqw",
+      "remarks": "美国线路3",
+      "server": "bowie.gowah.me",
+      "server_port": 9035
+    }
+  ],
+  "localPort": 1080,
+  "shareOverLan": false
+}
